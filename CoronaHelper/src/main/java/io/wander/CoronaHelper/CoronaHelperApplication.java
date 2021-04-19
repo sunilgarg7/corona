@@ -8,6 +8,7 @@ public class CoronaHelperApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CoronaHelperApplication.class, args);
+		System.out.println("First Hello... ");
 	}
 
 }
