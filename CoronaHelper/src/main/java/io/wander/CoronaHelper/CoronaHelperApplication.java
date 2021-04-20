@@ -3,7 +3,7 @@ package io.wander.CoronaHelper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication // (scanBasePackageClasses = "io.wander.*"})
 public class CoronaHelperApplication {
 
 	public static void main(String[] args) {
