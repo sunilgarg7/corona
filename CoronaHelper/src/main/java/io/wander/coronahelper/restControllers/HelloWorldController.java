@@ -1,4 +1,4 @@
-package io.wander.CoronaHelper.restControllers;
+package io.wander.coronahelper.restControllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import io.wander.CoronaHelper.data.Greeting;
+import io.wander.coronahelper.data.Greeting;
 
 @Controller
 public class HelloWorldController {
@@ -21,4 +21,16 @@ public class HelloWorldController {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 
+	
+	// below is for the Model Of HATEOAS
+//	@RequestMapping("/greeting")
+//	public HttpEntity<Greeting> greeting(
+//		@RequestParam(value = "name", defaultValue = "World") String name) {
+//
+//		Greeting greeting = new Greeting(0, String.format(template, name));
+//		greeting.add(linkTo(methodOn(HelloWorldController.class).greeting(name)).withSelfRel());
+//
+//		return new ResponseEntity<>(greeting, HttpStatus.OK);
+//	}
+	
 }
