@@ -52,10 +52,16 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency> -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency> -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-remote-shell -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-remote-shell</artifactId>
+    <version>1.4.3.RELEASE</version>
+</dependency>
 		<!-- Below dependency will auto-reload the app, without user intervention when it detects any change in code or config -->
 		<dependency>
 		<groupId>org.springframework.boot</groupId>
